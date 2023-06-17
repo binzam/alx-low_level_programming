@@ -6,19 +6,29 @@
  */
 int main(void)
 {
-int i, j;
+	int num1 = 0, num2;
 
-for (i = 0; i < 10; i++)
-{
-for (j = 0; j < 10; j++)
-{
-putchar(i + '0');
-putchar(j + '0');
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
+	while (num1 <= 9)
+	{
+		num2 = 0;
+		while (num2 <= 9)
+		{
+			if (num1 != num2 && num1 < num2)
+			{
+				putchar(num1 + 48);
+				putchar(num2 + 48);
+
+				if (num1 + num2 != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			num2++;
+		}
+		num1++;
+	}
+	putchar('\n');
 
 return (0);
 }
