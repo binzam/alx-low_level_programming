@@ -7,19 +7,32 @@
  */
 int main(void)
 {
-int i, j;
+	int firstn = 0, secondn;
 
-for (i = 0; i < 100; i++)
-{
-for (j = i; j < 100; j++)
-{
-if (i != j)
-{
-printf("%02d %02d, ", i, j);
-}
-}
-}
+	while (firstn <= 99)
+	{
+		secondn = firstn;
+		while (secondn <= 99)
+		{
+			if (secondn != firstn)
+			{
+				putchar((firstn / 10) + 48);
+				putchar((firstn % 10) + 48);
+				putchar(' ');
+				putchar((secondn / 10) + 48);
+				putchar((secondn % 10) + 48);
 
-return (0);
-}
+				if (firstn != 98 || secondn != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			secondn++;
+		}
+		firstn++;
+	}
+	putchar('\n');
 
+	return (0);
+}
