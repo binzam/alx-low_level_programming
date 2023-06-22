@@ -7,18 +7,17 @@
  */
 void more_numbers(void)
 {
-	int line, numbers, num;
+	int line, order, num;
 
 	for (line = 0; line < 11; line++)
 	{
-		for (numbers = 0; numbers < 15; numbers++)
+		for (order = 0; order < 15; order++)
 		{
-			num = numbers;
-
-			if (numbers > 9)
+			num = order;
+			if (order > 9)
 			{
 				_putchar(1 + 48);
-				num = numbers % 10;
+				num = order % 10;
 			}
 			_putchar(num + 48);
 		}
