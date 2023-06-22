@@ -36,7 +36,7 @@ int main(void)
 		/*print i if it's not divisible by 3 or 5*/
 			printf("%d ", i);
 		}
+		printf("\n");
 	}
-	printf("\n");
 	return (0);
 }
