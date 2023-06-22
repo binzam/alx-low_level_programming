@@ -15,28 +15,20 @@
 
 int main(void)
 {
-	int i;
+int number;
 
-	for (i = 1; i <= 100; i++)
+	for (number = 1; number <= 100; number++)
 	{
-		if (i % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz ");
-		}
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz ");
-		}
+		if (number % 3 == 0)
+			printf("Fizz");
+		else if (number % 5 == 0)
+			printf("Buzz");
+		else if (number % 3 == 0 && number % 5 == 0)
+			printf("FizzBuzz");
+		if (number != 100)
+			printf(" ");
 		else
-		{
-		/*print i if it's not divisible by 3 or 5*/
-			printf("%d ", i);
-		}
-		printf("\n");
+			printf("\n");
 	}
 	return (0);
 }
