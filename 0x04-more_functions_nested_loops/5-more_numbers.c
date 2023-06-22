@@ -7,21 +7,21 @@
  */
 void more_numbers(void)
 {
-int line, numbers, num;
+	int line, numbers, num;
 
-for (line = 0; line < 11; line++)
-{
-for (numbers = 0; numbers < 15; numbers++)
-{
-num = numbers;
+	for (line = 0; line < 11; line++)
+	{
+		for (numbers = 0; numbers < 15; numbers++)
+		{
+			num = numbers;
 
-if (numbers > 9)
-{
-_putchar(1 + '0');
-num = numbers % 10;
-}
-_putchar(num + '0');
-}
-_putchar('\n');
-}
+			if (numbers > 9)
+			{
+				_putchar(1 + '0');
+				num = numbers % 10;
+			}
+			_putchar(num + '0');
+		}
+		_putchar('\n');
+	}
 }
