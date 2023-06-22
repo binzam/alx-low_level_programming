@@ -2,8 +2,7 @@
 
 /**
  * main - Entry point
- *
- * Description: Print numbers from 1 - 100 followed
+ * Print numbers from 1 - 100 followed
  * by a new line.
  * For numbers that are multiples of 3,print Fizz
  * For numbers that are multiples of 5,print Buzz
