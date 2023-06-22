@@ -5,11 +5,12 @@
  * followed by a new line
  * Return: 0 (success)
  */
+
 void more_numbers(void)
 {
 	int line, order, num;
 
-	for (line = 0; line < 11; line++)
+	for (line = 0; line < 10; line++)
 	{
 		for (order = 0; order < 15; order++)
 		{
