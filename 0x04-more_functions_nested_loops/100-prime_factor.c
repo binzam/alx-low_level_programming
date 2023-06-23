@@ -8,30 +8,30 @@
  */
 int main(void)
 {
-long n = 612852475143;
-long i;
+	long number = 612852475143;
+	long i;
 
-while (n % 2 == 0)
-{
-n /= 2;
-}
+	while (number % 2 == 0)
+	{
+		number /= 2;
+	}
 
-for (i = 3; i <= sqrt(n); i += 2)
-{
-while (n % i == 0)
-{
-n /= i;
-}
-}
+	for (i = 3; i <= sqrt(number); i += 2)
+	{
+		while (number % i == 0)
+		{
+			number /= i;
+		}
+	}
 
-if (n > 2)
-{
-printf("%ld\n", n);
-}
-else
-{
-printf("%ld\n", i - 2);
-}
+	if (number > 2)
+	{
+		printf("%ld\n", number);
+	}
+	else
+	{
+		printf("%ld\n", i - 2);
+	}
 
-return (0);
+	return (0);
 }
