@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point
- * Print numbers from 1 - 100 followed
+ *
+ * Description: Print numbers from 1 - 100 followed
  * by a new line.
  * For numbers that are multiples of 3,print Fizz
  * For numbers that are multiples of 5,print Buzz
@@ -18,22 +19,27 @@ int main(void)
 
 	for (n = 1; n <= 100; n++)
 	{
-		if (n % 3 == 0 && n % 5 == 0)
+		if ((n % 3 == 0) && (n % 5 == 0))
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (n % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if (n % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
 			printf("%d ", n);
 		}
+		if (n != 100)
+		{
+			printf(" ");
+		}
 	}
+	printf("\n");
 	return (0);
 }
