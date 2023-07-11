@@ -5,8 +5,8 @@
  * **alloc_grid - a function that creates a two dimensional
  *                  array of integers
  *
- * @width: width of the matrix
- * @height: height of the matrix
+ * @width: width
+ * @height: height
  *
  * Return: pointer to a 2 dimenstional array of integers(success),
  *         NULL (failure)
