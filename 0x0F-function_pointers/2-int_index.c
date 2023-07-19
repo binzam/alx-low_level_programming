@@ -8,7 +8,7 @@
  *
  * Return: the index of the first element for which
  * the cmp function does not return 0
- *
+ * or also if size is negative
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
