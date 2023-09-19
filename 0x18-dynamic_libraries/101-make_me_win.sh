@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp https://github.com/Tolulope05/alx-low_level_programming/raw/master/0x18-dynamic_libraries/libgigaso
-export LD_PRELOAD=/tmp/libgiga.so
+gcc -shared -o myprintf.so -fPIC printf.c
+export LD_PRELOAD=./myprintf.so:$LD_LIBRARY_PATH
